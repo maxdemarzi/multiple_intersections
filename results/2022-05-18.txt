@@ -1,0 +1,48 @@
+2022-05-18T00:19:58-05:00
+Running /home/max/CLionProjects/multiple_intersections/cmake-build-release/bin/multiple_intersections
+Run on (8 X 4800.73 MHz CPU s)
+CPU Caches:
+  L1 Data 32 KiB (x8)
+  L1 Instruction 32 KiB (x8)
+  L2 Unified 256 KiB (x8)
+  L3 Unified 16384 KiB (x1)
+Load Average: 0.05, 0.15, 0.27
+------------------------------------------------------------------------------------------
+Benchmark                                                Time             CPU   Iterations
+------------------------------------------------------------------------------------------
+BM_using_ranges_multi_set_intersection/2/8            70.9 ns         70.8 ns     10000000
+BM_using_ranges_multi_set_intersection/3/8            98.1 ns         98.0 ns     10000000
+BM_using_ranges_multi_set_intersection/4/8            63.4 ns         63.3 ns     10000000
+BM_using_ranges_multi_set_intersection/5/8            99.0 ns         98.8 ns     12290376
+BM_using_ranges_multi_set_intersection/6/8             138 ns          138 ns      8431005
+BM_using_ranges_multi_set_intersection/7/8             141 ns          141 ns      6359179
+BM_using_ranges_multi_set_intersection/2/64            138 ns          137 ns      7685034
+BM_using_ranges_multi_set_intersection/3/64            198 ns          197 ns      3953120
+BM_using_ranges_multi_set_intersection/4/64            206 ns          206 ns      3286469
+BM_using_ranges_multi_set_intersection/5/64            263 ns          263 ns      2498283
+BM_using_ranges_multi_set_intersection/6/64            326 ns          325 ns      2335118
+BM_using_ranges_multi_set_intersection/7/64            312 ns          312 ns      2000845
+BM_using_ranges_multi_set_intersection/2/512           659 ns          658 ns      1114013
+BM_using_ranges_multi_set_intersection/3/512           978 ns          977 ns       755957
+BM_using_ranges_multi_set_intersection/4/512          1212 ns         1210 ns       571599
+BM_using_ranges_multi_set_intersection/5/512          1489 ns         1486 ns       474894
+BM_using_ranges_multi_set_intersection/6/512          1482 ns         1480 ns       405077
+BM_using_ranges_multi_set_intersection/7/512          1949 ns         1946 ns       325349
+BM_using_ranges_multi_set_intersection/2/4096        21807 ns        21766 ns        32232
+BM_using_ranges_multi_set_intersection/3/4096        27953 ns        27906 ns        25099
+BM_using_ranges_multi_set_intersection/4/4096        32272 ns        32212 ns        21459
+BM_using_ranges_multi_set_intersection/5/4096        36265 ns        36201 ns        19311
+BM_using_ranges_multi_set_intersection/6/4096        41005 ns        40926 ns        17540
+BM_using_ranges_multi_set_intersection/7/4096        44609 ns        44528 ns        15557
+BM_using_ranges_multi_set_intersection/2/32768      200406 ns       200059 ns         3490
+BM_using_ranges_multi_set_intersection/3/32768      248683 ns       248210 ns         2823
+BM_using_ranges_multi_set_intersection/4/32768      278712 ns       278222 ns         2505
+BM_using_ranges_multi_set_intersection/5/32768      309384 ns       308843 ns         2279
+BM_using_ranges_multi_set_intersection/6/32768      334883 ns       334307 ns         2068
+BM_using_ranges_multi_set_intersection/7/32768      367687 ns       366997 ns         1906
+BM_using_ranges_multi_set_intersection/2/262144    1663992 ns      1660774 ns          420
+BM_using_ranges_multi_set_intersection/3/262144    2033308 ns      2029744 ns          345
+BM_using_ranges_multi_set_intersection/4/262144    2289746 ns      2285577 ns          306
+BM_using_ranges_multi_set_intersection/5/262144    2561761 ns      2556831 ns          274
+BM_using_ranges_multi_set_intersection/6/262144    2849686 ns      2843829 ns          246
+BM_using_ranges_multi_set_intersection/7/262144    3177169 ns      3170833 ns          220
