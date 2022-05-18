@@ -31,6 +31,40 @@ Running it:
 
 ./cmake-build-release/bin/multiple_intersections --benchmark_out "./results/2022-05-19.csv" --benchmark_out_format=csv
 
+## Comparing:
+
+    git clone https://github.com/google/benchmark.git
+    cd ./benchmark/tools
+    pip3 install -r requirements.txt
+
+If the requirements install fails, try:
+
+    pip3 install numpy
+    pip3 install scipy
+    pip3 install pandas
+
+Once the requirements are met try:
+
+    ./compare.py filters ../../multiple_intersections/cmake-build-release/bin/multiple_intersections BM_using_ranges_set_intersection BM_using_set_intersection_in_place
+
+Winner BM_using_set_intersection_in_place by 0.1820
+
+    ./compare.py filters ../../multiple_intersections/cmake-build-release/bin/multiple_intersections BM_using_set_intersection_in_place BM_using_galloping_search
+
+Winner BM_using_set_intersection_in_place by 0.1647
+
+    ./compare.py filters ../../multiple_intersections/cmake-build-release/bin/multiple_intersections BM_using_set_intersection_in_place BM_using_binary_search
+
+Winner BM_using_set_intersection_in_place by 0.5332
+
+    ./compare.py filters ../../multiple_intersections/cmake-build-release/bin/multiple_intersections BM_using_set_intersection_in_place BM_using_less_branching
+
+Winner BM_using_set_intersection_in_place by 0.2770
+
+    ./compare.py filters ../../multiple_intersections/cmake-build-release/bin/multiple_intersections BM_using_set_intersection_in_place BM_using_less_branching_unrolled
+ 
+Winner BM_using_set_intersection_in_place by 0.2554
+
 ## Important Note:
 
 As stated in google benchmark documentation, to disable CPU scaling use cpupower tool.
