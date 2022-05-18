@@ -16,41 +16,7 @@
 
 #include "benchmark/benchmark.h"
 #include "generate_data.h"
-
-#include <set>
-#include <vector>
-#include <algorithm>
-
-
-
-
-
-std::vector<uint64_t> using_ranges_multi_set_intersection(std::vector<std::vector<uint64_t>>& nums) {
-
-    // 1. Check if any index is empty, if so then the intersection is empty
-    for (auto& index : nums) {
-        if (index.empty()) {
-            return {};
-        }
-    }
-
-    // 2. Sort indexes by their first value
-    std::sort(nums.begin(), nums.end());
-
-    // 3. Swap the 2nd vector for the last one to try to eliminate a bunch right away
-    nums.at(1).swap(nums.at(nums.size() - 1));
-
-    // initialize by the first vector
-    std::vector<uint64_t> result(nums[0].begin(), nums[0].end());
-
-    for (int i = 1; i < nums.size(); ++i) {
-        std::vector<uint64_t> intersection;
-        std::ranges::set_intersection(nums[i], result, back_inserter(intersection));
-        result = intersection;
-    }
-
-    return result;
-}
+#include "std_set_intersection.h"
 
 static void BM_using_ranges_multi_set_intersection(benchmark::State &state) {
     sorted_vectors = sorted_maps[state.range(0)][state.range(1)];
