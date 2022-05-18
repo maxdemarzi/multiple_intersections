@@ -21,7 +21,7 @@
 #include <vector>
 #include <algorithm>
 
-std::vector<uint64_t> using_ranges_multi_set_intersection(std::vector<std::vector<uint64_t>>& nums) {
+std::vector<uint64_t> using_ranges_set_intersection(std::vector<std::vector<uint64_t>>& nums) {
 
     // 1. Check if any index is empty, if so then the intersection is empty
     for (auto& index : nums) {
@@ -43,6 +43,39 @@ std::vector<uint64_t> using_ranges_multi_set_intersection(std::vector<std::vecto
         std::vector<uint64_t> intersection;
         std::ranges::set_intersection(nums[i], result, back_inserter(intersection));
         result = intersection;
+        if (result.empty()) return result;
+    }
+
+    return result;
+}
+
+std::vector<uint64_t> using_set_intersection_in_place(std::vector<std::vector<uint64_t>>& nums) {
+
+    // 1. Check if any index is empty, if so then the intersection is empty
+    for (auto& index : nums) {
+        if (index.empty()) {
+            return {};
+        }
+    }
+
+    // 2. Sort indexes by their first value
+    std::sort(nums.begin(), nums.end());
+
+    // 3. Swap the 2nd vector for the last one to try to eliminate a bunch right away
+    nums.at(1).swap(nums.at(nums.size() - 1));
+
+    // initialize by the first vector
+    std::vector<uint64_t> result(nums[0].begin(), nums[0].end());
+
+    // https://stackoverflow.com/questions/1773526/in-place-c-set-intersection
+    for (int i = 1; i < nums.size(); ++i) {
+        auto end = std::set_intersection(
+                result.begin(), result.end(),
+                nums[i].begin(), nums[i].end(),
+                result.begin() // intersection is written in results
+        );
+        result.erase(end, result.end()); // erase redundant elements
+        if (result.empty()) return result;
     }
 
     return result;

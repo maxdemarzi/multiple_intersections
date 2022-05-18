@@ -41,7 +41,7 @@ foreach(ONE_BENCH_CPP ${ALL_BENCH_CPP})
     get_filename_component(ONE_BENCH_EXEC ${ONE_BENCH_CPP} NAME_WE)
     set(TARGET_NAME Benchmark_${ONE_BENCH_EXEC})
 
-    add_executable(${TARGET_NAME} ${ONE_BENCH_CPP} src/multiple_intersections.cpp src/generate_data.h src/std_set_intersection.h)
+    add_executable(${TARGET_NAME} ${ONE_BENCH_CPP} src/multiple_intersections.cpp src/generate_data.h src/std_set_intersection.h src/galloping_search.h src/binary_search.h src/less_branching.h)
     set_target_properties(${TARGET_NAME} PROPERTIES OUTPUT_NAME ${ONE_BENCH_EXEC})
     target_include_directories(${TARGET_NAME} PUBLIC ${CMAKE_SOURCE_DIR}/src)
     target_link_libraries(

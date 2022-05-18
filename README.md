@@ -8,6 +8,14 @@ We want to quickly find out which friends, if any they all share one in common.
 We will also need a simple one list against many lists but individually. 
 So we'll test intersecting just 2 lists as well.
 
+Ideas and code from: 
+
+[Daniel Lemire, Nathan Kurz, Owen Kaser](https://github.com/lemire/SIMDIntersections)
+[Sergey Slotin](https://en.algorithmica.org/hpc/data-structures/binary-search/)
+[Paul-Virak Khuong, Pat Morin](https://arxiv.org/pdf/1509.05053.pdf)
+
+
+
 ## Installation:
 
 Install Additional Dependencies:
@@ -18,6 +26,10 @@ Install conan:
 
     pip install --user conan
     sudo ln -s ~/.local/bin/conan /usr/bin/conan
+
+Running it:
+
+./cmake-build-release/bin/multiple_intersections --benchmark_out "./results/2022-05-19.csv" --benchmark_out_format=csv
 
 ## Important Note:
 
