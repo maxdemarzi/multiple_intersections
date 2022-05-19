@@ -1,0 +1,81 @@
+Comparing BM_using_ranges_set_intersection to BM_using_set_intersection_in_place (from ../../multiple_intersections/cmake-build-release/bin/multiple_intersections)
+Benchmark                                                                                            Time             CPU      Time Old      Time New       CPU Old       CPU New
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/2/8                     -0.3215         -0.3227            38            26            38            26
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/3/8                     -0.5795         -0.5802            88            37            88            37
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/4/8                     -0.3963         -0.3974            67            41            67            41
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/5/8                     -0.2904         -0.2916            56            40            56            40
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/6/8                     -0.5982         -0.5989           117            47           117            47
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/7/8                     -0.5556         -0.5564           128            57           128            57
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/2/64                    -0.2208         -0.2221           114            89           114            89
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/3/64                    -0.2689         -0.2701           181           132           181           132
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/4/64                    -0.2138         -0.2151           203           160           203           159
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/5/64                    -0.4908         -0.4917           326           166           326           166
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/6/64                    -0.2183         -0.2195           247           193           247           193
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/7/64                    -0.1944         -0.1957           274           221           274           220
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/2/512                   +0.0235         +0.0216           638           653           638           651
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/3/512                   -0.0930         -0.0946           990           898           990           896
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/4/512                   -0.0332         -0.0350          1300          1257          1300          1255
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/5/512                   -0.1623         -0.1637          1716          1437          1716          1435
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/6/512                   -0.1074         -0.1089          1877          1675          1877          1672
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/7/512                   -0.0198         -0.0216          1928          1890          1928          1886
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/2/4096                  -0.0980         -0.0995         20038         18074         20037         18044
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/3/4096                  -0.1323         -0.1338         27222         23620         27221         23580
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/4/4096                  -0.1314         -0.1330         31610         27455         31608         27404
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/5/4096                  -0.1042         -0.1058         35339         31655         35338         31600
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/6/4096                  -0.1347         -0.1363         39008         33752         39007         33692
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/7/4096                  -0.1304         -0.1319         44198         38434         44197         38367
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/2/32768                 -0.0343         -0.0360        197130        190375        197126        190032
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/3/32768                 -0.0412         -0.0427        249277        239004        249247        238599
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/4/32768                 -0.0118         -0.0135        274860        271619        274843        271143
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/5/32768                 -0.0152         -0.0170        304551        299924        304529        299355
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/6/32768                 -0.0137         -0.0156        332767        328202        332758        327580
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/7/32768                 -0.0256         -0.0274        365029        355678        365020        355033
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/2/262144                -0.0185         -0.0204       1629153       1598961       1629113       1595903
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/3/262144                +0.0038         +0.0018       1994639       2002139       1994535       1998169
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/4/262144                +0.0064         +0.0045       2243782       2258202       2243664       2253741
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/5/262144                -0.0068         -0.0088       2516088       2499028       2516029       2493787
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/6/262144                -0.0208         -0.0229       2823422       2764614       2823241       2758589
+[BM_using_ranges_set_intersection vs. BM_using_set_intersection_in_place]/7/262144                -0.0282         -0.0302       3136286       3047900       3136157       3041413
+OVERALL_GEOMEAN                                                                                   -0.1820         -0.1837             0             0             0             0
+
+Comparing BM_using_set_intersection_in_place to BM_using_galloping_search (from ../../multiple_intersections/cmake-build-release/bin/multiple_intersections)
+Benchmark                                                                                     Time             CPU      Time Old      Time New       CPU Old       CPU New
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/2/8                     +0.2345         +0.2343            26            32            26            32
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/3/8                     +0.1780         +0.1780            34            40            34            40
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/4/8                     +0.3298         +0.3299            40            53            40            53
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/5/8                     +0.3108         +0.3110            45            59            45            59
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/6/8                     +0.4001         +0.4003            53            74            53            74
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/7/8                     +0.2653         +0.2653            58            74            58            74
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/2/64                    +0.2775         +0.2775            91           117            91           116
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/3/64                    +0.3617         +0.3618           128           174           128           174
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/4/64                    +0.1582         +0.1582           159           184           159           184
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/5/64                    +0.1982         +0.1982           163           195           163           195
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/6/64                    +0.0517         +0.0517           201           211           201           211
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/7/64                    +0.1381         +0.1379           219           250           219           249
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/2/512                   +0.2753         +0.2753           646           824           645           823
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/3/512                   +0.2284         +0.2289           923          1134           921          1132
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/4/512                   +0.1100         +0.1100          1221          1355          1219          1353
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/5/512                   -0.0137         -0.0135          1408          1389          1405          1386
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/6/512                   +0.0490         +0.0492          1474          1547          1472          1544
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/7/512                   +0.2385         +0.2384          1477          1830          1475          1826
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/2/4096                  +0.0314         +0.0312         18016         18582         17985         18547
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/3/4096                  +0.1461         +0.1461         23846         27329         23804         27282
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/4/4096                  +0.1526         +0.1526         27652         31871         27604         31815
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/5/4096                  +0.1765         +0.1764         31222         36733         31169         36668
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/6/4096                  +0.2190         +0.2190         34790         42411         34729         42336
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/7/4096                  +0.1783         +0.1783         38356         45194         38290         45118
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/2/32768                 +0.0889         +0.0888        190906        207872        190576        207493
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/3/32768                 +0.1472         +0.1468        238296        273372        237879        272790
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/4/32768                 +0.1436         +0.1436        271168        310105        270698        309582
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/5/32768                 +0.1436         +0.1432        298869        341778        298340        341072
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/6/32768                 +0.1286         +0.1289        327121        369198        326442        368528
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/7/32768                 +0.1065         +0.1064        354865        392647        354189        391863
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/2/262144                +0.0781         +0.0782       1598092       1722938       1594924       1719662
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/3/262144                +0.1197         +0.1198       1989419       2227644       1985596       2223456
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/4/262144                +0.1276         +0.1276       2240480       2526427       2236219       2521525
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/5/262144                +0.1146         +0.1145       2495437       2781320       2490625       2775728
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/6/262144                +0.0868         +0.0868       2758622       2998167       2752865       2991924
+[BM_using_set_intersection_in_place vs. BM_using_galloping_search]/7/262144                +0.0613         +0.0613       3040687       3227105       3034153       3220157
+OVERALL_GEOMEAN                                                                            +0.1647         +0.1653             0             0             0             0
